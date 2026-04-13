@@ -9,12 +9,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           <div className="flex items-center space-x-1 group cursor-pointer">
             <div>
-              <img src="/bat.png" alt="Alucart" className="w-6 h-6 sm:w-8 sm:h-8" />
+              <img src="/jester-hat-1.png" alt="CodeLoon" className="w-6 h-6 sm:w-8 sm:h-8" />
             </div>
           </div>
           <span className="text-lg sm:text-xl md:text-2xl font-medium">
-            <span className="text-white">Alu</span>
-            <span className="text-red-500">Cart</span>
+            <span className="text-white">Code</span>
+            <span className="text-green-500">Loon</span>
           </span>
 
         {/* Nav Links */}

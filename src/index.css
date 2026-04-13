@@ -13,6 +13,10 @@
   .duration-300 {
     animation-duration: 300ms;
   }
+
+  .duration-200 {
+    animation-duration: 200ms;
+  }
 }
 
 @keyframes slideInFromTop {
