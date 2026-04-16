@@ -118,7 +118,32 @@ public class PlayerMovement : MonoBehaviour
     rb.linearVelocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
   }
 
-}
-`
+}`,
+};
 
+export const floatingCards = {
+    "Props.cs": {
+        bgColor: "bg-blue-500/20",
+        iconColor: "text-blue-400",
+        textColor: "text-blue-200",
+        contentColor: "text-blue-300",
+        title: "Smart Completion",
+        content: "CodeLoon AI doesn't understands your code at all but will try it's best to autocomplete the entire project by importing thousands of lines of code and libraries and even unsolicited assets from the web."
+    },
+    "Player.cs": {
+        bgColor: "bg-emerald-500/20",
+        iconColor: "text-emerald-400",
+        textColor: "text-emerald-200",
+        contentColor: "text-emerald-300",
+        title: "Smart Search",
+        content: "CodeLoon AI will search through your entire codebase to find relevant information and solutions, unless it gets bored and decides to search the web instead. This may result in the AI commandeering your system to browse the web for hours on end, with no guarantee of finding anything useful or relevant to your project."
+    },
+    "Movement.cs": {
+        bgColor: "bg-purple-500/20",
+        iconColor: "text-purple-400",
+        textColor: "text-purple-200",
+        contentColor: "text-purple-300",
+        title: "AI Debugging",
+        content: "Once activated, this feature will comb the web to find solutions to any errors in your code and will automatically apply them, one at a time, even if it means breaking the entire project. This process cannot be stopped until all disparate StackOverflow posts and years old blogs have been scraped and applied to your codebase, and will restart if the IDE is closed or not currently in focus."
+    },
 }

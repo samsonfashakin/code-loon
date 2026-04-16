@@ -1,7 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { use, useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { codeExamples } from "../data/CodeExamples";
+import { codeExamples, floatingCards } from "../data/CodeExamples";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export default function Hero() {
@@ -17,6 +17,8 @@ export default function Hero() {
     return () => window.removeEventListener("mousemove", handleMouseMove); //removing the event listener in the useEffect cleanup function to prevent memory leaks and unintended behavior when the component unmounts
     
   }, []); //<-- added an empty dependency array to ensure the effect doesn't run infinitely on every render. This way, the event listener is added only once when the component mounts and removed when it unmounts.
+
+  const currentFloatingCard = floatingCards[activeTab];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -65,7 +67,13 @@ export default function Hero() {
             </div>
           </div>
           {/* Floating Cards */}
-          
+          <div className={`hidden lg:block absolute bottom-4 right-4 transform translate-x-8 translate-y-8 w-72 ${currentFloatingCard.bgColor} backdrop-blur-xl rounded-lg p-4 border border-white/20 shadow-large-2xl`}>
+            <div className="flex items-center space-x-2 mb-2">
+              <div className={`w-6 h-6 ${currentFloatingCard.iconColor} flex items-center justify-center text-sm font-bold`}>{currentFloatingCard.icon}</div>
+              <span className={`text-sm font-medium ${currentFloatingCard.textColor}`}>{currentFloatingCard.title}</span>
+            </div>
+            <div className={`text-sm text-left ${currentFloatingCard.contentColor}`}>{currentFloatingCard.content}</div>
+          </div>
         </div>
       </div>
     </section>
