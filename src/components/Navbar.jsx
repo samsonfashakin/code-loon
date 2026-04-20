@@ -11,11 +11,12 @@ export default function Navbar() {
             <div>
               <img src="/jester-hat-1.png" alt="CodeLoon" className="w-6 h-6 sm:w-8 sm:h-8" />
             </div>
-          </div>
-          <span className="text-lg sm:text-xl md:text-2xl font-medium">
+          
+          <span className="text-lg sm:text-xl md:text-2xl font-medium ">
             <span className="text-white">Code</span>
             <span className="text-green-500">Loon</span>
           </span>
+        </div>
 
         {/* Nav Links */}
         <div className="hidden md:flex item-center space-x-6 lg:space-x-8">
