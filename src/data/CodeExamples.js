@@ -136,7 +136,7 @@ export const floatingCards = {
         textColor: "text-emerald-200",
         contentColor: "text-emerald-300",
         title: "Smart Search",
-        content: "CodeLoon AI will search through your entire codebase to find relevant information and solutions, unless it gets bored and decides to search the web instead. This may result in the AI commandeering your system to browse the web for hours on end, with no guarantee of finding anything useful or relevant to your project."
+        content: "CodeLoon AI will search through your entire codebase to find relevant information and solutions, unless it gets bored and decides to search the web instead."
     },
     "Movement.cs": {
         bgColor: "bg-purple-500/20",
@@ -144,6 +144,6 @@ export const floatingCards = {
         textColor: "text-purple-200",
         contentColor: "text-purple-300",
         title: "AI Debugging",
-        content: "Once activated, this feature will comb the web to find solutions to any errors in your code and will automatically apply them, one at a time, even if it means breaking the entire project. This process cannot be stopped until all disparate StackOverflow posts and years old blogs have been scraped and applied to your codebase, and will restart if the IDE is closed or not currently in focus."
+        content: "Once activated, this feature will comb the web to find solutions to any errors in your code and will automatically apply them, one at a time, even if it means breaking the entire project."
     },
 }
